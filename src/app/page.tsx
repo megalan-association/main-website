@@ -1,10 +1,10 @@
 import Image from 'next/image'
+import Header from './components/Header'
 
 export default function Home() {
   return (
-    <main className="flex flex-1 flex-col items-center justify-between p-24">
-      <div className='flex flex-col justify-center h-screen'>Hello</div>
-    
+    <main className="flex flex-col flex-1 w-screen p-2">
+      <div className=''>Hello</div>
     </main>
   )
 }

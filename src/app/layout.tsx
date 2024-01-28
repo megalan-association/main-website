@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import Header from "./components/header";
+import Header from "./components/Header";
 
 export const metadata: Metadata = {
   title: "MegaLan",
@@ -14,11 +14,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="flex h-screen w-screen flex-col">
-      <body>
-      <header className="bg-gray-800 p-4 text-white fixed top-0 w-screen">
+    <html lang="en">
+      <body className="h-screen w-screen flex flex-col">
         <Header />
-        </header>
         {children}
       </body>
     </html>
