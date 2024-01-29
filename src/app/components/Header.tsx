@@ -20,13 +20,13 @@ export default function Header() {
 
   return (
     <Navbar
-      className="w-full bg-black justify-center "
+      className="w-full bg-black justify-center items-center "
       onMenuOpenChange={setIsMenuOpen}
     >
-      <NavbarContent justify="start" className="hidden sm:block">
-        <NavbarBrand className="justify-start hidden sm:block ">
+      <NavbarContent justify="start" className="hidden sm:block ">
+        <NavbarBrand className="h-full justify-start text-center">
           {/* TODO: add Logo here */}
-          <p className="font-bold text-inherit lg:text-2xl text-white  ">MegaLan</p>
+          <p className="font-bold lg:text-2xl text-white  ">MegaLan</p>
         </NavbarBrand>
       </NavbarContent>
 
