@@ -23,37 +23,42 @@ export default function Header() {
       className="w-full bg-black justify-center "
       onMenuOpenChange={setIsMenuOpen}
     >
-      <NavbarContent justify="start" className="w-full">
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
-
-        <NavbarBrand className="justify-start">
-          {/* <AcmeLogo />/ */}
-          <p className="font-bold text-inherit lg:text-2xl  ">MegaLan</p>
+      <NavbarContent justify="start" className="hidden sm:block">
+        <NavbarBrand className="justify-start hidden sm:block ">
+          {/* TODO: add Logo here */}
+          <p className="font-bold text-inherit lg:text-2xl text-white  ">MegaLan</p>
         </NavbarBrand>
       </NavbarContent>
-      {/* <NavbarContent justify="center" className="sm:hidden">
-        <NavbarBrand>
-          <AcmeLogo />/
-          <p className="font-bold text-inherit  ">MegaLan</p>
+
+      <NavbarContent className="w-full sm:hidden">
+      <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden text-white justify-start"
+        />
+      <NavbarBrand className="justify-center">
+          {/* TODO: add Logo here */}
+
+          <p className="font-bold text-inherit lg:text-2xl text-white  ">MegaLan</p>
         </NavbarBrand>
-      </NavbarContent> */}
+
+      </NavbarContent>
+
+
+
 
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#" className="text-white">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
+        <NavbarItem >
+          <Link href="#" aria-current="page" className="text-white">
             Get Tickets
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#" className="text-white">
             About Us
           </Link>
         </NavbarItem>
