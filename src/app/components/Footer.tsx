@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white p-1">
-      <div className="container mx-auto flex flex-col items-center">
-        <div className="flex flex-row w-full justify-between">
+    <footer className="bg-black text-white">
+      <div className="flex flex-col items-center">
+        <div className="px-4 bg-black flex flex-row w-full items-center justify-between">
           {/* Megalan Logo */}
           <div>
             <h1 className="text-3xl">MegaLan</h1>
@@ -25,9 +25,9 @@ const Footer: React.FC = () => {
             © 2024 MegaLan. All rights reserved.
           </p> */}
         </div>
-        <div className="h-10"></div>
+        {/* <div className="h-10"></div> */}
 
-        <div className="flex flex-row w-full justify-between">
+        <div className="flex p-4 flex-row w-full justify-between bg-neutral-800">
           <div className="flex flex-col w-1/4">
             <div className="w-full justify-center">
               <h1 className="text-xl">Contact Us:</h1>
