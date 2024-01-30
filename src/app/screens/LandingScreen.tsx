@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Countdown from "../components/Countdown";
 const LandingScreen: React.FC = () => {
@@ -21,7 +22,9 @@ const LandingScreen: React.FC = () => {
                 UNSW&apos;S GAMING CONVENTION
               </span>
             </div>
+            <div className="p-2  sm:p-0">
             <Countdown />
+            </div>
           </div>
           <div className="animate-bounce text-2xl md:text-4xl justify-end  bottom-0">
             <div className="w-full text-center text-black">&#8595;</div>
