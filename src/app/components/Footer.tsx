@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-black text-white w-full">
       <div className="flex flex-col items-center">
         <div className="px-4 bg-black flex flex-row w-full items-center justify-between">
           {/* Megalan Logo */}

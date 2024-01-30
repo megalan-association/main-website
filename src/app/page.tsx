@@ -1,10 +1,13 @@
 import Image from 'next/image'
 import Header from './components/Header'
+import LandingScreen from './screens/LandingScreen'
 
 export default function Home() {
   return (
-    <main className="flex flex-col flex-1 w-screen p-2">
-      <div className=''>Hello</div>
+    <main className="flex flex-col h-full w-full">
+      <div className='h-full w-full'>
+      <LandingScreen />
+      </div>
     </main>
   )
 }
