@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <Navbar
-      className="w-full bg-black justify-center items-center "
+      className="w-full bg-black fixed justify-center items-center "
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent justify="start" className="hidden sm:block ">
