@@ -107,10 +107,6 @@ export default function SocGrid() {
       </Card>
       ))}
     </div>
-
-    
-
-
     <SocModal isOpen={isOpen} onClose={handleClose} socData={soc}/>
     </div>
   );
