@@ -36,7 +36,7 @@ export default function EventCard({index, title, description, image, link} : Pro
         onOpenChange={onOpenChange}
         size="3xl"
       >
-        <ModalContent className="bg-neutral-800 text-white h-[70vh] sm:h-auto overflow-y-scroll sm:overflow-auto">
+        <ModalContent className="bg-neutral-800 text-white max-h-[70vh] sm:max-h-auto overflow-y-scroll sm:overflow-auto">
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col">{title}</ModalHeader>
