@@ -93,7 +93,7 @@ export default function EventGrid() {
 
   return (
     <div className="flex h-full flex-col p-4 items-center">
-      <span className=" text-white text-xl sm:text-2xl">MegaLAN consists of several "sections" that are free for all to explore.</span>
+      <span className=" text-white text-xl sm:text-2xl">MegaLAN consists of several &quot;sections&quot; that are free for all to explore.</span>
       <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-fit p-5">
         {list.map((item, index) => (
           // TODO: REMOVE TEMP
