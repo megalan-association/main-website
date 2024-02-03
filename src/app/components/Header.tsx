@@ -16,7 +16,7 @@ import {
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ["Home", "Get Tickets", "About Us"];
+  const menuItems = ["Home", "Get Tickets", "What's On", "About Us"];
 
   return (
     <Navbar
@@ -57,6 +57,11 @@ export default function Header() {
             Get Tickets
           </Link>
         </NavbarItem>
+        <NavbarItem >
+          <Link href="/whats-on" aria-current="page" className="text-white">
+            What's On
+          </Link>
+        </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#" className="text-white">
             About Us
@@ -75,7 +80,7 @@ export default function Header() {
                   : "foreground"
               }
               className="justify-center w-full text-4xl"
-              href="#"
+              href={index === 2 ? "/whats-on" : "#/"}
               size="lg"
             >
               {item}
