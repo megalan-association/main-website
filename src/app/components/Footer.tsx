@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
               <SocialMediaIcon icon={FaFacebook} name="megalan.official" />
               <SocialMediaIcon icon={FaInstagram} name="megalan_au" />
               <Link href={"https://discord.gg/zbmjnV9GH9%22%3EJoin"}>
-              <SocialMediaIcon icon={FaDiscord} name="https://discord.gg/zbmjnV9GH9%22%3EJoin" />
+              <SocialMediaIcon icon={FaDiscord} name="Join Our Discord Server!" />
               </Link>
 
               {/* </Link> */}

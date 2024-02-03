@@ -14,7 +14,7 @@ const LandingScreen: React.FC = () => {
     <>
       <div
         style={{
-          backgroundImage: `url(/1A9A5324-76.png)`,
+          backgroundImage: `url(/1A9A5324-76.jpg)`,
           width: "100%",
           minHeight: "100%",
           backgroundRepeat: "no-repeat",
@@ -36,7 +36,7 @@ const LandingScreen: React.FC = () => {
 
             
           </div>
-          <div className="h-full px-20 py-10">
+          <div className="h-full px-20 py-5">
 
             <Link href="https://events.humanitix.com/megalan">
             <Button className="scale-150" size="lg">Get Tickets</Button>

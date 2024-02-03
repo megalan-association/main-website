@@ -37,12 +37,12 @@ export default function Home() {
             </div>
           </div>
 
-           <div className="flex  justify-center bg-neutral-700">
+           {/* <div className="flex  justify-center bg-neutral-700">
         <div className="w-full md:container "> 
-          {/* <EventGrid /> */}
+          <EventGrid />
           <SocGrid />
          </div>
-      </div>
+      </div> */}
       {/* <div className="flex justify-center bg-neutral-700">
         <div className="w-full md:container ">
           <SupportGrid />

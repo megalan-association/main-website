@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "MegaLan",
+  title: "MegaLAN",
   description: "Main Website",
 };
 
