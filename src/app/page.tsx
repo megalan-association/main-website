@@ -4,6 +4,7 @@ import LandingScreen from "./screens/LandingScreen";
 import SocGrid from "./components/SocGrid";
 import InfoScreen from "./screens/InfoScreen";
 import SupportGrid from "./components/SupportGrid";
+import ImageCarousel from "./components/ImageCarousel";
 
 export default function Home() {
   return (
