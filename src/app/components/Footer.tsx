@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { MdFacebook } from "react-icons/md";
 import SocialMediaIcon from "./Socials";
 import { FaDiscord, FaFacebook, FaInstagram } from "react-icons/fa";
 
@@ -12,7 +11,8 @@ const Footer: React.FC = () => {
         <div className="px-4 bg-black flex flex-row w-full items-center justify-between">
           {/* Megalan Logo */}
           <div>
-            <h1 className="text-3xl">MegaLan</h1>
+          <Image width={200} height={50} alt='MegaLAN' src="/megalan_association_white-20.png"> 
+          </Image>
           </div>
 
           <div>

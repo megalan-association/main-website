@@ -11,7 +11,10 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
+import Image from "next/image";
 // import {AcmeLogo} from "./AcmeLogo.jsx";
+
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,14 +28,17 @@ export default function Header() {
   ];
 
   return (
+
+    
     <Navbar
       className="w-full bg-black fixed justify-center items-center "
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent justify="start" className="hidden sm:block ">
         <NavbarBrand className="h-full justify-start text-center">
-          {/* TODO: add Logo here */}
-          <p className="font-bold lg:text-2xl text-white  ">MegaLan</p>
+        <Image width={200} height={50} alt='MegaLAN' src="/megalan_association_white-20.png"> 
+          </Image>
+          {/* <p className="font-bold lg:text-2xl text-white  ">MegaLan</p> */}
         </NavbarBrand>
       </NavbarContent>
 
@@ -42,11 +48,14 @@ export default function Header() {
           className="sm:hidden text-white justify-start"
         />
         <NavbarBrand className="justify-center">
-          {/* TODO: add Logo here */}
+          <Image width={200} height={50} alt='MegaLAN' src="/megalan_association_white-20.png"> 
+          </Image>
 
-          <p className="font-bold text-inherit lg:text-2xl text-white  ">
+          
+
+          {/* <p className="font-bold text-inherit lg:text-2xl text-white  ">
             MegaLan
-          </p>
+          </p> */}
         </NavbarBrand>
       </NavbarContent>
 

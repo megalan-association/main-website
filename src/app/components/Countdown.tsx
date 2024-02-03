@@ -36,7 +36,7 @@ const Countdown: React.FC = () => {
   const formatTime = (value: number) => value.toString().padStart(2, "0");
 
   return (
-    <div className="z-10 flex flex-col p-4 sm:ml-5  md:ml-10 bg-black w-fit rounded-2xl bg-opacity-50">
+    <div className="z-10 flex flex-col p-4 sm:ml-5  md:ml-10  w-fit rounded-2xl ">
       <span className="text-white text-3xl font-bold">
         Next MegaLan -&quot;Might and Magic&quot; Begins in:
       </span>

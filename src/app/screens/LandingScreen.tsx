@@ -1,19 +1,20 @@
-"use client"
+"use client";
 import React from "react";
 import Countdown from "../components/Countdown";
 import dynamic from "next/dynamic";
+import Link from "next/link";
+import { Button } from "@nextui-org/react";
 
-const Timer = dynamic(() => import('../components/Countdown'), {
-  ssr: false
-})
-
+const Timer = dynamic(() => import("../components/Countdown"), {
+  ssr: false,
+});
 
 const LandingScreen: React.FC = () => {
   return (
     <>
       <div
         style={{
-          backgroundImage: `url('https://www.inside.unsw.edu.au/sites/default/files/article/clancy-750x400.png')`,
+          backgroundImage: `url(/1A9A5324-76.png)`,
           width: "100%",
           minHeight: "100%",
           backgroundRepeat: "no-repeat",
@@ -30,9 +31,23 @@ const LandingScreen: React.FC = () => {
               </span>
             </div>
             <div className="p-2  sm:p-0">
-            <Timer />
+              <Timer />
             </div>
+
+            
           </div>
+          <div className="h-full px-20 py-10">
+
+            <Link href="https://events.humanitix.com/megalan">
+            <Button className="scale-150" size="lg">Get Tickets</Button>
+            </Link>
+              
+              {/* <button className="bg-white rounded-md text-black p-2 ">
+                <Link href={"https://events.humanitix.com/megalan"}>
+                  
+                </Link>
+              </button> */}
+            </div>
           <div className="animate-bounce text-2xl md:text-4xl justify-end  bottom-0">
             <div className="w-full text-center text-black">&#8595;</div>
           </div>

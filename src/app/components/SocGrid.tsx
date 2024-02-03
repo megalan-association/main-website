@@ -50,11 +50,13 @@ export default function SocGrid() {
     {
       title: "PokeSoc",
       img: "",
+      desc:"Pokémon! Whether it’s the diversity or the competitiveness, the nostalgia or the cuteness, there are so many reasons why we love Pokémon! Our growing community is full of passion and comfort and is an ideal space for all fans of the franchise to get involved and have fun while sharing your Pokémon adventures."
       
     },
     {
       title: "RGS",
       img: "",
+      desc:"The Rhythm Games Society is for all rhythm game enjoyers, including Project Sekai, Bandori, osu!, Arcaea, Guitar Hero, maimai, and a whole lot more! Meet other UNSW rhythm gamers and join us for musical mayhem in our casual and competitive events!!!"
       
     },
     {
