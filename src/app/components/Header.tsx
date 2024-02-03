@@ -16,7 +16,13 @@ import {
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ["Home", "Get Tickets", "What's On", "About Us"];
+  const menuItems = [
+    { name: "Home", url: "/" },
+    { name: "Poll", url: "/poll" },
+    { name: "Get Tickets", url: "/" },
+    { name: "What's On", url: "/whats-on" },
+    {name: "About Us", url: "/"},
+  ];
 
   return (
     <Navbar
@@ -31,35 +37,38 @@ export default function Header() {
       </NavbarContent>
 
       <NavbarContent className="w-full sm:hidden">
-      <NavbarMenuToggle
+        <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden text-white justify-start"
         />
-      <NavbarBrand className="justify-center">
+        <NavbarBrand className="justify-center">
           {/* TODO: add Logo here */}
 
-          <p className="font-bold text-inherit lg:text-2xl text-white  ">MegaLan</p>
+          <p className="font-bold text-inherit lg:text-2xl text-white  ">
+            MegaLan
+          </p>
         </NavbarBrand>
-
       </NavbarContent>
-
-
-
 
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
-          <Link color="foreground" href="#" className="text-white">
+          <Link color="foreground" href="/" className="text-white">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem >
+        <NavbarItem>
+          <Link href="/poll" className="text-white">
+            Poll
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
           <Link href="#" aria-current="page" className="text-white">
             Get Tickets
           </Link>
         </NavbarItem>
-        <NavbarItem >
+        <NavbarItem>
           <Link href="/whats-on" aria-current="page" className="text-white">
-            What's On
+            What&apos;s On
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -72,18 +81,11 @@ export default function Header() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem className="justify-center" key={`${item}-${index}`}>
             <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
               className="justify-center w-full text-4xl"
-              href={index === 2 ? "/whats-on" : "#/"}
+              href={item.url}
               size="lg"
             >
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}

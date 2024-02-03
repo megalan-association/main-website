@@ -5,7 +5,7 @@ export default function Poll () {
 
   return (
     <div className="w-full bg-white ">
-      <div className=" w-full flex flex-col" id="strawpoll_bVg8oMG13nY">
+      <div className=" mt-12 w-full flex flex-col" id="strawpoll_bVg8oMG13nY">
         <iframe
           title="StrawPoll Embed"
           id="strawpoll_iframe_bVg8oMG13nY"
