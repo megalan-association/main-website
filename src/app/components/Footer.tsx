@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import { MdFacebook } from "react-icons/md";
 
 const Footer: React.FC = () => {
   return (
@@ -27,18 +29,28 @@ const Footer: React.FC = () => {
         </div>
         {/* <div className="h-10"></div> */}
 
-        <div className="flex p-4 flex-row w-full justify-between bg-neutral-800">
+        <div className="flex p-4 flex-col justify-center sm:flex-row w-full sm:justify-between bg-neutral-800">
+          
+          <div >
           <div className="flex flex-col w-1/4">
             <div className="w-full justify-center">
               <h1 className="text-xl">Contact Us:</h1>
               <span>Email:</span>
             </div>
           </div>
+          
+          
           <div className="flex flex-col w-1/4">
             <div className="w-full justify-center">
               <h1 className="text-xl">Follow Our Socials:</h1>
+              <div className="flex flex-row w-full">
+                <MdFacebook color="blue" size={40} />
+                <div>megalan.official</div>
+              </div>
+
               <span>Email:</span>
             </div>
+          </div>
           </div>
 
           <div className="flex flex-col w-1/2">

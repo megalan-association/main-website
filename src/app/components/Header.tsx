@@ -63,7 +63,7 @@ export default function Header() {
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu className="w-full bg-gray-300 h-full flex flex-col justify-evenly ">
+      <NavbarMenu className="w-full bg-neutral-600 h-full flex flex-col justify-evenly ">
         {menuItems.map((item, index) => (
           <NavbarMenuItem className="justify-center" key={`${item}-${index}`}>
             <Link

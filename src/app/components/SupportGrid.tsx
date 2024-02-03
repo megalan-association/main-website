@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import {Button, Card, CardBody, CardFooter, Image, Modal, ModalContent, ModalHeader, ModalBody, ModalFooter,useDisclosure} from "@nextui-org/react";
 import SocModal from "./SocModal";
 
-export default function SocGrid() {
+export default function SupportGrid() {
   const list = [
     {
       title: "PCSoc: Computers and Tech",
@@ -76,9 +76,9 @@ export default function SocGrid() {
 
 
   return (
-    <div className="flex h-full min=h-screen flex-col">
+    <div className="flex h-full flex-col">
 
-      <span className="text-white text-xl sm:text-4xl md:w-1/3">THE STUDENT SOCIETIES BEHIND MEGALAN</span>
+      <span className="text-white text-xl sm:text-4xl md:w-1/2">WITH SUPPORT FROM THE FOLLOWING ORGANISATIONS</span>
     
     <div className="gap-4 grid grid-cols-2  md:grid-cols-4  h-full p-5">
       {list.map((item, index) => (
@@ -104,8 +104,6 @@ export default function SocGrid() {
       </Card>
       ))}
     </div>
-
-    
 
 
     <SocModal isOpen={isOpen} onClose={handleClose} socData={soc}/>
