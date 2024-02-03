@@ -1,6 +1,13 @@
 "use client"
 import React from "react";
 import Countdown from "../components/Countdown";
+import dynamic from "next/dynamic";
+
+const Timer = dynamic(() => import('../components/Countdown'), {
+  ssr: false
+})
+
+
 const LandingScreen: React.FC = () => {
   return (
     <>
@@ -23,7 +30,7 @@ const LandingScreen: React.FC = () => {
               </span>
             </div>
             <div className="p-2  sm:p-0">
-            <Countdown />
+            <Timer />
             </div>
           </div>
           <div className="animate-bounce text-2xl md:text-4xl justify-end  bottom-0">

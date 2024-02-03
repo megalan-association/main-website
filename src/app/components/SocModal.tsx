@@ -24,6 +24,8 @@ interface ModalProps {
 }
 
 const SocModal: FC<ModalProps> = ({ isOpen, onClose, socData }) => {
+
+  console.log(socData);
   return (
     <Modal
       backdrop="blur"
@@ -37,17 +39,14 @@ const SocModal: FC<ModalProps> = ({ isOpen, onClose, socData }) => {
         {(onClose) => (
           <>
             <ModalHeader className="flex flex-col gap-1 text-white text-3xl sm:text-5xl">
-              {socData}
+              {socData.title}
             </ModalHeader>
             <ModalBody>
-              <ImageCarousel />
+              <ImageCarousel images={undefined} />
 
               <div className="text-wrap text-lg p-4 container text-white">
-                Pokémon! Whether it&apos;s the diversity or the competitiveness,
-                the nostalgia or the cuteness, there are so many reasons why we
-                love Pokémon! Our growing community is full of passion and
-                comfort and is an ideal space for all fans of the franchise to
-                get involved and have fun while sharing your Pokémon adventures.
+                {socData?.desc}
+              
               </div>
 
               <div className="w-full p-3">

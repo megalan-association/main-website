@@ -1,6 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { MdFacebook } from "react-icons/md";
+import SocialMediaIcon from "./Socials";
+import { FaDiscord, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
@@ -13,8 +16,8 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <button className="bg-white rounded-md text-black p-2">
-              Get Tickets
+            <button className="bg-white rounded-md text-black p-2 " >
+              <Link href={"https://events.humanitix.com/megalan"}>Get Tickets</Link>
             </button>
           </div>
 
@@ -32,23 +35,29 @@ const Footer: React.FC = () => {
         <div className="flex p-4 flex-col justify-center sm:flex-row w-full sm:justify-between bg-neutral-800">
           
           <div >
-          <div className="flex flex-col w-1/4">
+          {/* <div className="flex flex-col w-1/4">
             <div className="w-full justify-center">
               <h1 className="text-xl">Contact Us:</h1>
               <span>Email:</span>
             </div>
-          </div>
+          </div> */}
           
           
           <div className="flex flex-col w-1/4">
             <div className="w-full justify-center">
               <h1 className="text-xl">Follow Our Socials:</h1>
-              <div className="flex flex-row w-full">
-                <MdFacebook color="blue" size={40} />
-                <div>megalan.official</div>
+              <div className="flex flex-col w-full">
+                {/* <Link > */}
+              <SocialMediaIcon icon={FaFacebook} name="megalan.official" />
+              <SocialMediaIcon icon={FaInstagram} name="megalan_au" />
+              <Link href={"https://discord.gg/zbmjnV9GH9%22%3EJoin"}>
+              <SocialMediaIcon icon={FaDiscord} name="https://discord.gg/zbmjnV9GH9%22%3EJoin" />
+              </Link>
+
+              {/* </Link> */}
               </div>
 
-              <span>Email:</span>
+              {/* <span>Email:</span> */}
             </div>
           </div>
           </div>
@@ -64,7 +73,7 @@ const Footer: React.FC = () => {
                   <span>Esports Club</span>
                   <span>Fighitng Games Society</span>
                   <span>Game Development Society</span>
-                  <span>Genshin Impact Society</span>
+                  {/* <span>Genshin Impact Society</span> */}
                   <span>Mechanical Keyboard Society</span>
                 </div>
                 <div className="flex flex-col">
@@ -77,9 +86,9 @@ const Footer: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <p className="text-xl">With Support From:</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

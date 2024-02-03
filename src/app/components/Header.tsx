@@ -19,7 +19,7 @@ export default function Header() {
   const menuItems = [
     { name: "Home", url: "/" },
     { name: "Poll", url: "/poll" },
-    { name: "Get Tickets", url: "/" },
+    { name: "Get Tickets", url: "https://events.humanitix.com/megalan" },
     { name: "What's On", url: "/whats-on" },
     {name: "About Us", url: "/"},
   ];
@@ -62,7 +62,7 @@ export default function Header() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" aria-current="page" className="text-white">
+          <Link href="https://events.humanitix.com/megalan" aria-current="page" className="text-white">
             Get Tickets
           </Link>
         </NavbarItem>
