@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 const Countdown: React.FC = () => {
-  const targetDate = "2024-02-17T10:00:00+1100";
+  const targetDate = "2024-06-08T10:00:00+1000";
 
   const calculateTimeLeft = () => {
     const difference = new Date(targetDate).getTime() - new Date().getTime();
@@ -38,7 +38,7 @@ const Countdown: React.FC = () => {
   return (
     <div className="z-10 flex flex-col p-4 sm:ml-5  md:ml-10  w-fit rounded-2xl ">
       <span className="text-white text-3xl font-bold">
-        Next MegaLan -&quot;Might and Magic&quot; Begins in:
+        Next MegaLan -&quot;Steampunk&quot; Begins in:
       </span>
 
       <div className="text-4xl sm:text-6xl w-fit mt-5 font-extrabold text-white">
